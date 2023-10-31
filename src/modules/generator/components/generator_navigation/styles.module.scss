@@ -1,0 +1,42 @@
+@import '/src/styles/variables.scss';
+
+.generator_navigation {
+    @include flex($align: stretch);
+    margin-bottom: 20px;
+    strong {
+        @include flex($justify: center, $align: center);
+        @include font($color: $light, $align: center);
+        flex: 1 0;
+        padding: 10px;
+        word-break: break-all;
+        border-radius: 5px 0 0 5px;
+        background-color: $dark_opacity;
+    }
+    > div {
+        @include flex($direction: column);
+        flex: 0 0 50px;
+        button {
+            @include border($radius: 0);
+            @include font($color: $light, $align: center);
+            display: block;
+            width: 50px;
+            height: 50%;
+            min-height: 50px;
+            transition: all 150ms ease;
+            cursor: pointer;
+            &:first-of-type {
+                border-top-right-radius: 5px;
+                background: $dark url('./images/refresh.svg') center / 20px
+                    no-repeat;
+            }
+            &:last-of-type {
+                border-bottom-right-radius: 5px;
+                background: $dark url('./images/copy.svg') center / 20px
+                    no-repeat;
+            }
+            &.active {
+                background-color: $dark_darker;
+            }
+        }
+    }
+}

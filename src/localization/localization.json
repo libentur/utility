@@ -1,0 +1,60 @@
+{
+    "sidebar": {
+        "ru": {
+            "navigation": {
+                "generator": {
+                    "title": "Генератор",
+                    "description": "Утилита для создания строки из случайных символов. Обычно используется для создания паролей."
+                },
+                "gradients": {
+                    "title": "Градиенты",
+                    "description": "Небольшой пак отобранных градиентов для работы над сайтами. Примеры использования есть на данном ресурсе."
+                }
+            }
+        },
+        "en": {
+            "navigation": {
+                "generator": {
+                    "title": "Generator",
+                    "description": "Utility for creating a string of random characters. Typically used for generating passwords."
+                },
+                "gradients": {
+                    "title": "Gradients",
+                    "description": "Small collection of selected gradients for use on websites. Usage examples are available on this resource."
+                }
+            }
+        }
+    },
+    "generator": {
+        "ru": {
+            "module_title": "utility/ Генератор",
+            "chars": {
+                "uppercase": "Прописные",
+                "lowercase": "Строчные",
+                "digits": "Цифры",
+                "symbols": "Символы"
+            }
+        },
+        "en": {
+            "module_title": "utility/ Generator",
+            "chars": {
+                "uppercase": "Uppercase",
+                "lowercase": "Lowercase",
+                "digits": "Digits",
+                "symbols": "Symbols"
+            }
+        }
+    },
+    "gradients": {
+        "ru": {
+            "module_title": "utility / Градиенты",
+            "previous_button": "Назад",
+            "next_button": "Вперёд"
+        },
+        "en": {
+            "module_title": "utility / Gradients",
+            "previous_button": "Previous",
+            "next_button": "Next"
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+$dark: hsl(200, 20%, 20%);
+$dark_darker: hsl(200, 20%, 15%);
+$dark_opacity: hsla(200deg, 25%, 25%, 0.5);
+
+$light: hsl(200deg, 20%, 80%);
+$light_opacity: hsla(200deg, 20%, 80%, 0.25);
+$light_darker: hsl(200deg, 20%, 50%);
+
+$hamburger: hsl(0, 40%, 50%);
+$github: hsl(265, 30%, 50%);
+$background: linear-gradient(to right, #3e5151, #decba4);
+
+@mixin font(
+    $family: 'Roboto',
+    $color: $dark,
+    $size: 14px,
+    $weight: normal,
+    $spacing: normal,
+    $transform: none,
+    $decoration: none,
+    $align: left
+) {
+    font-family: 'Roboto';
+    color: $color;
+    font-size: $size;
+    line-height: calc($size * 1.5);
+    font-weight: $weight;
+    letter-spacing: $spacing;
+    text-transform: $transform;
+    text-decoration: $decoration;
+    text-align: $align;
+}
+@mixin flex(
+    $justify: flex-start,
+    $align: flex-start,
+    $direction: row,
+    $wrap: nowrap,
+    $gap: 0
+) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+@mixin border($border: none, $outline: none, $radius: 5px) {
+    border: $border;
+    outline: $outline;
+    border-radius: $radius;
+}

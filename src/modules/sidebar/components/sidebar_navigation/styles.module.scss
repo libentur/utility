@@ -1,0 +1,66 @@
+@import '/src/styles/variables.scss';
+
+.sidebar_navigation {
+    display: block;
+    width: 100%;
+    a {
+        @include flex($gap: 20px);
+        padding: 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        background-color: $dark_opacity;
+        transition: all 150ms ease;
+        &:hover {
+            background-color: $dark;
+        }
+        .icon {
+            align-self: center;
+            img {
+                width: 100%;
+                border-radius: 5px;
+            }
+            @media screen and (max-width: 480px) {
+                flex: 0 0 30px;
+            }
+            @media screen and (min-width: 481px) {
+                flex: 0 0 50px;
+            }
+        }
+        .info {
+            padding-left: 15px;
+            border-left: 3px solid $dark;
+            h6 {
+                margin-bottom: 5px;
+                @media screen and (max-width: 480px) {
+                    @include font(
+                        $family: 'JetBrains Mono',
+                        $color: $light,
+                        $size: 14px,
+                        $spacing: 2px,
+                        $transform: uppercase
+                    );
+                }
+                @media screen and (min-width: 481px) {
+                    @include font(
+                        $family: 'JetBrains Mono',
+                        $color: $light,
+                        $size: 16px,
+                        $spacing: 2px,
+                        $transform: uppercase
+                    );
+                }
+            }
+            p {
+                @media screen and (max-width: 480px) {
+                    @include font($color: $light, $size: 12px);
+                }
+                @media screen and (min-width: 481px) {
+                    @include font($color: $light, $size: 14px);
+                }
+            }
+        }
+        & + a {
+            margin-top: 15px;
+        }
+    }
+}

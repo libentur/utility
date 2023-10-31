@@ -1,0 +1,36 @@
+@import '/src/styles/variables.scss';
+
+.generator_length {
+    @include flex($justify: center, $align: stretch, $direction: column);
+    width: calc(30% - 10px);
+    strong {
+        @include flex($justify: center, $align: center);
+        @include font($color: $light);
+        flex: 1 0;
+        width: 100%;
+        padding: 10px;
+        background-color: $dark_opacity;
+    }
+    button {
+        @include border($radius: 0);
+        @include font($color: $light, $align: center);
+        display: block;
+        flex: 0 1;
+        width: 100%;
+        padding: 10px;
+        background-color: $dark;
+        transition: all 150ms ease;
+        cursor: pointer;
+        &:first-child {
+            align-self: flex-start;
+            border-radius: 5px 5px 0 0;
+        }
+        &:last-child {
+            align-self: flex-end;
+            border-radius: 0 0 5px 5px;
+        }
+        &.active {
+            background-color: $dark_darker;
+        }
+    }
+}

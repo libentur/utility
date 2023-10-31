@@ -1,0 +1,31 @@
+@import '/src/styles/variables.scss';
+
+.gradients {
+    @include flex($justify: center, $direction: column, $gap: 15px);
+    min-width: 260px;
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+    &_navigation {
+        @include flex(
+            $justify: center,
+            $align: center,
+            $wrap: nowrap,
+            $gap: 15px
+        );
+        width: 100%;
+        button {
+            @include border($radius: 5px);
+            @include font($color: $light, $align: center);
+            display: block;
+            width: 50%;
+            padding: 10px;
+            background-color: $dark;
+            transition: all 150ms ease;
+            cursor: pointer;
+            &.active {
+                background-color: $dark_darker;
+            }
+        }
+    }
+}

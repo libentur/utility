@@ -1,0 +1,8 @@
+@import '/src/styles/variables.scss';
+
+.footer {
+    position: relative;
+    width: 100%;
+    flex: 0 0 50px;
+    background-color: $dark;
+}

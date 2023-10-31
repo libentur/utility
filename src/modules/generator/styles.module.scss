@@ -1,0 +1,14 @@
+@import '/src/styles/variables.scss';
+
+.generator {
+    @include border($border: 3px solid $dark);
+    min-width: 260px;
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $dark_opacity;
+    &_settings {
+        @include flex($align: stretch, $gap: 20px);
+    }
+}
